@@ -74,5 +74,6 @@ let potenza = numero1 ** numero2;
 
 console.log(potenza);
 
+console.log(`con i numeri da te scelti, i risultati delle varie operazioni sono: addizione ${addizione}, sottrazione:22 ${sottrazione} moltiplicazione: ${moltiplicazione}, divisione: ${divisione}, elevazioneapotenza: 3434${potenza},`);
 
 
