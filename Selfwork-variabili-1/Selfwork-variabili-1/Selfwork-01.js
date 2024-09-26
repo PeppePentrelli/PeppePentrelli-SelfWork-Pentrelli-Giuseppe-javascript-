@@ -76,4 +76,16 @@ console.log(potenza);
 
 console.log(`con i numeri da te scelti, i risultati delle varie operazioni sono: addizione ${addizione}, sottrazione:22 ${sottrazione} moltiplicazione: ${moltiplicazione}, divisione: ${divisione}, elevazioneapotenza: 3434${potenza},`);
 
+// SELFWORK OPERATORI-4
 
+let cat = 44
+let rows_cat= 6
+let resto = cat % rows_cat
+let numero_file = Math.floor(cat / rows_cat)
+let cat_lost = rows_cat - resto
+
+console.log (numero_file);
+console.log(cat_lost);
+console.log(resto);
+
+console.log(`Ci sono ${numero_file} file di gatti e ne mancano ${cat_lost} per una nuova fila, con un avanzo di ${resto}.`);
