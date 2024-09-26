@@ -74,5 +74,5 @@ let potenza = numero1 ** numero2;
 
 console.log(potenza);
 
-3737
+
 
