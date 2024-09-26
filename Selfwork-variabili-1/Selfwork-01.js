@@ -1,18 +1,18 @@
-let num1 = 5
-let num2 = 7
+let num1 = 5;
+let num2 = 7;
 console.log('il valore della variabile num1 è: ' + num1);
 console.log(`il valore della variabile num2 è: ${num2} `);
 
-let stringa = 'ciao,a tutti!'
+let stringa = 'ciao,a tutti!';
 
-stringa = 'benvenuti'
+stringa = 'benvenuti';
 console.log(`il valore della variabile stringa è ${stringa}`);
 
-const PIGRECO = 3.14159265359
+const PIGRECO = 3.14159265359;
 console.log(`il valore di Pgreco è ${PIGRECO}`);
 
 
-// PIGRECO = 20
+// PIGRECO = 20;
 console.log(PIGRECO);
 
 
@@ -24,10 +24,10 @@ let b = 2;
 let c = 3;
 let d = 4;
 let e = 5;
-let somma = a + b + c + d + e
-console.log (somma)
+let somma = a + b + c + d + e;
+console.log (somma);
 
-let media = somma / 5
+let media = somma / 5;
 
 console.log(media / 5);
 
@@ -38,14 +38,41 @@ console.log('la media tra i numeri equivale a ' + media);
 
 // SELFWORK OPERATORI-2
 
-let years = 2024
-let età = 1995
-let conut_age = years - età
+let years = 2024;
+let età = Number(prompt("Inserisci il tuo anno di nascita :"));;
+let conut_age = years - età;
   
-console.log(conut_age)
+console.log(conut_age);
 
-let cent = 100
-let forcent = cent - conut_age
+let cent = 100;
+let forcent = cent - conut_age;
 
-console.log(`hai ${conut_age} anni e te ne mancano ${forcent} per arrivare a 100`)
+console.log(`hai ${conut_age} anni e te ne mancano ${forcent} per arrivare a 100`);
+
+// SELFWORK OPERATORI-3
+
+let numero1 = Number(prompt("Inserisci il primo numero:"));
+let numero2 = Number(prompt("Inserisci il secondo numero:"));
+
+let addizione = (numero1 + numero2);
+
+console.log(addizione);
+
+let sottrazione = numero1 - numero2;
+
+console.log(sottrazione);
+
+let moltiplicazione = numero1 * numero2;
+
+console.log(moltiplicazione);
+
+let divisione = numero1 / numero2;
+
+console.log(divisione);
+
+let potenza = numero1 ** numero2;
+
+console.log(potenza);
+
+
 
