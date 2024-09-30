@@ -28,31 +28,31 @@ else {
 
 let voto = prompt('inserisci il tuo voto');
 switch (true) {
-
+    
     case voto > 0 && voto < 18:
-        console.log('insufficiente');
-        break
-
+    console.log('insufficiente');
+    break
+    
     case voto >= 18 && voto < 21:
-        console.log('sufficiente');
-        break
-
+    console.log('sufficiente');
+    break
+    
     case voto >= 21 && voto < 24:
-        console.log('distinto');
-        break
-
+    console.log('distinto');
+    break
+    
     case voto >= 18 && voto < 27:
-        console.log('ottimo');
-        break
-
+    console.log('ottimo');
+    break
+    
     case voto == 30:
-        console.log('eccelente');
-        break
-
+    console.log('eccelente');
+    break
+    
     default:
-        console.log('inserisci un voto compreso tra 0 e 30');
-        break
-
+    console.log('inserisci un voto compreso tra 0 e 30');
+    break
+    
 }
 
 
@@ -69,8 +69,8 @@ else if (temperatura < 0 && temperatura > -10) {
 if (temperatura < 20 && temperatura >= 0) {
     console.log('non ci sono piu le mezze stagioni');
 }
-else if (temperatura < 30 && temperatura > 20) {
-    console.log('mi dia una peroni sudata'); -222
+else if (temperatura < 30 && temperatura >= 20) {
+    console.log('mi dia una peroni sudata'); 
 }
 else if (temperatura >= 30) {
     console.log('lu mare, lu sole, lu ientu');
@@ -84,26 +84,26 @@ let gradi = prompt('inserisci i gradi');
 
 switch (true) {
     case gradi <= -10:
-        console.log('copriti...ancora ti raffreddi');
-        break
-
+    console.log('copriti...ancora ti raffreddi');
+    break
+    
     case gradi < 0 && gradi > -10:
-        console.log("non è tanto il freddo quanto l'umidita");
-        break
-
+    console.log("non è tanto il freddo quanto l'umidita");
+    break
+    
     case gradi < 20 && gradi >= 0:
-        console.log("non ci sono piu le mezze stagioni");
-        break
-
-    case gradi < 30 && gradi > 20:
-        console.log('mi dia una personi sudata');
-        break
-
+    console.log("non ci sono piu le mezze stagioni");
+    break
+    
+    case gradi < 30 && gradi >= 20:
+    console.log('mi dia una personi sudata');
+    break
+    
     case gradi >= 30:
-        console.log('lu mare, lu sole, lu ientu');
-        break
-
+    console.log('lu mare, lu sole, lu ientu');
+    break
+    
     default:
-        console.log('inserisci una temperatura corretta');
-        break
+    console.log('inserisci una temperatura corretta');
+    break
 }
