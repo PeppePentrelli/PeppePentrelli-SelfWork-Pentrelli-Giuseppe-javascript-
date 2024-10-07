@@ -38,7 +38,7 @@ console.log(array_1[0][0],
 
 // Selfwork funzioni 1
 
-// lancio di dadi giocatore 1
+
 
 let scelta_utente = Number(prompt('Quanti tiri effettuerai a questo turno?'));
 
@@ -73,4 +73,32 @@ let risultato = lancio_dado(scelta_utente)
 console.log(risultato);
 
 // selfwork Funzioni 2
+
+
+function stampa (num) {
+
+    for (i = 1; i <= num; i++) {
+        
+        if (i % 15 == 0) {
+
+           console.log('FizzBuzz');
+           
+            
+        } else if (i % 5 == 0) {
+            
+             console.log('Buzz');
+             
+        } else if(i % 3 == 0) { 
+
+            console.log('fizz');
+            
+        } else { 
+            console.log(i);
+            
+        }
+        
+    } 
+    
+}
+stampa(100)
 
