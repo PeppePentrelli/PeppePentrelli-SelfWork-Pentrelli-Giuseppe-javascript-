@@ -44,37 +44,33 @@ let scelta_utente = Number(prompt('Quanti tiri effettuerai a questo turno?'));
 
 function lancio_dado (numero_lanci) {
 let somma = 0
+let somma2 = 0
+
 
 for (let i = 0; i < numero_lanci; i++) {
-    let tiro = Math.floor(Math.random() * (6 - 1) + 1) +1
-    somma += tiro;   
 
-    console.log('tiro', i+1 ,':', tiro );
+    somma +=  Math.floor(Math.random() * (6 - 1) + 1) +1;
+    somma2 +=  Math.floor(Math.random() * (6 - 1) + 1) +1;
+
 }
-return somma;
+console.log(somma);
+console.log(somma2);
+if (somma > somma2) {
+    
+    return 'ha vinto il giocatore 1'
+
+    
+} else if(somma2 > somma ) {
+
+    return 'ha vinto il giocatore 2'
+
+ } else {
+    return 'pareggio'
+ }
 
 }
 let risultato = lancio_dado(scelta_utente)
-console.log(`Giocatore 1 hai tirato il dato ${scelta_utente} volte e hai accumulato ${risultato} `);
+console.log(risultato);
 
+// selfwork Funzioni 2
 
-
-// lancio di dadi giocatore 2
-
-
-let scelta_utente2 = Number(prompt('Quanti tiri effettuerai a questo turno?'));
-
-function lancio_dado (numero_lanci) {
-let somma = 0
-
-for (let i = 0; i < numero_lanci; i++) {
-    let tiro = Math.floor(Math.random() * (6 - 1) + 1) +1
-    somma += tiro;   
-
-    console.log('tiro', i+1 ,':', tiro );
-}
-return somma;
-
-}
-let risultato2 = lancio_dado(scelta_utente2)
-console.log(`Giocatore 2 hai tirato il dato ${scelta_utente2} volte e hai accumulato ${risultato2} `);
