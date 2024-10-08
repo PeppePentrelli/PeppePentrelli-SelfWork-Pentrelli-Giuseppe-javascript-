@@ -102,3 +102,29 @@ function stampa (num) {
 }
 stampa(100)
 
+// SelfWork Funzioni 3
+
+
+let User_choice = prompt('inserisci un numero da 1 a 9999');
+
+function check(numero_positivo) {
+
+
+    if (User_choice <= 9) {
+        console.log('il numero e formato da una cifra');
+
+    } else if (User_choice > 9 && User_choice < 99) {
+        console.log('il numero e formato da due cifre');
+
+    } else if (User_choice > 99 && User_choice < 999) {
+        console.log('il numero è formato da tre cifre');
+
+    } else if (User_choice > 999 && User_choice < 9999) {
+        console.log('il numero è formato da 4 cifre');
+
+    } else { console.log('il numero è troppo grande'); }
+
+}
+
+
+check(User_choice);
