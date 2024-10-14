@@ -1,29 +1,49 @@
-// SelfWork Funzioni 3
+// SelfWork Funzioni 4
+
+function esercizio(boolean) {
 
 
-let User_choice = prompt('inserisci un numero da 1 a 9999');
+    let string = boolean.replace(/\W/g, "");
 
-function check(numero_positivo) {
+    let string_reverse = string.split('').reverse().join('');
 
-
-    if (User_choice <= 9) {
-        console.log('il numero e formato da una cifra');
-
-    } else if (User_choice > 9 && User_choice <=99 ) {
-        console.log('il numero e formato da due cifre');
-
-    } else if (User_choice > 99 && User_choice <= 999) {
-        console.log('il numero è formato da tre cifre');
-
-    } else if (User_choice > 999 && User_choice <= 9999) {
-        console.log('il numero è formato da 4 cifre');
-
-    } else { console.log('il numero è troppo grande'); }
+    return string_reverse === string
 
 }
 
 
-check(User_choice);
+let finale = esercizio('i topi non avevano nipoti')
+console.log(finale);
+
+
+
+
+// SelfWork Funzioni 3
+
+
+// let User_choice = prompt('inserisci un numero da 1 a 9999');
+
+// function check(numero_positivo) {
+
+
+//     if (User_choice <= 9) {
+//         console.log('il numero e formato da una cifra');
+
+//     } else if (User_choice > 9 && User_choice <=99 ) {
+//         console.log('il numero e formato da due cifre');
+
+//     } else if (User_choice > 99 && User_choice <= 999) {
+//         console.log('il numero è formato da tre cifre');
+
+//     } else if (User_choice > 999 && User_choice <= 9999) {
+//         console.log('il numero è formato da 4 cifre');
+
+//     } else { console.log('il numero è troppo grande'); }
+
+// }
+
+
+// check(User_choice);
 
 
 
@@ -35,27 +55,27 @@ check(User_choice);
 // function stampa (num) {
 
 //     for (i = 1; i <= num; i++) {
-        
+
 //         if (i % 15 == 0) {
 
 //            console.log('FizzBuzz');
-           
-            
+
+
 //         } else if (i % 5 == 0) {
-            
+
 //              console.log('Buzz');
-             
+
 //         } else if(i % 3 == 0) { 
 
 //             console.log('fizz');
-            
+
 //         } else { 
 //             console.log(i);
-            
+
 //         }
-        
+
 //     } 
-    
+
 // }
 // stampa(100)
 
@@ -80,10 +100,10 @@ check(User_choice);
 // console.log(somma);
 // console.log(somma2);
 // if (somma > somma2) {
-    
+
 //     return 'ha vinto il giocatore 1'
 
-    
+
 // } else if(somma2 > somma ) {
 
 //     return 'ha vinto il giocatore 2'
