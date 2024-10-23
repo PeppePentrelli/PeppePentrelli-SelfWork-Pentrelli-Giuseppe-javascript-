@@ -1,15 +1,19 @@
-// SELFWORK OGGETTI 1-2-3 IN FILA:
-
-
-/// SELFWORK OGGETTI 1:
-
+// SELFWORK OGGETTI 1:
 
 let persona = {
 
     nome: 'Giuseppe',
     cognome: 'Pentrelli',
-    età: 29
+    eta: 29,
 
+    saluta: function () {
+
+        console.log(`Ciao a tutti il mio nome è ${this.nome} ${this.cognome} e ho ${this.eta} anni`);
+
+    }
 };
+persona.saluta()
 
-console.log(`Ciao a tutti il mio nome è ${persona.nome}`);
+
+
+
