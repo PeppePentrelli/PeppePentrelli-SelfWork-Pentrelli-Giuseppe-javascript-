@@ -1,8 +1,5 @@
 // SELFWORK OGGETTI 2:
 
-// Non sono riuscito a finire l'esercizio e non ho aggiunto la funzione per modificare,
-// ho avuto molte difficolta a fare questo esercizio ma lo mandato lo stesso per non rimanere bloccato cosi posso avere un feedback. Grazie mille
-
 let rubrica = {
     'contacts': [
         {'nome': 'Nicola', 'telefono': '3331111111'},
@@ -61,12 +58,28 @@ rimuovi_contatto : function (nome_rimosso) {
     
 },
 
+modifica_contatto : function (oldName, newName, newNumber) {
+
+    this.contacts.forEach((contatto) => { 
+        if (contatto.nome == oldName) { 
+            contatto.nome = newName;
+            contatto.telefono = newNumber;
+            
+        }
+    })
+}
+
 }
 
 rubrica.mostra_contatti()
 rubrica.rimuovi_contatto('Lorenzo')
 rubrica.aggiungi_contatto('gianfederico',232323232)
 rubrica.mostra_contatto('Nicola')
+rubrica.mostra_contatti()
+rubrica.modifica_contatto('Nicola', 'Matteo',2223433434)
+rubrica.mostra_contatti()
+
+
 
 
 
